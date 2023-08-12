@@ -1,0 +1,101 @@
+:root {
+  --text-color: rgb(184, 184, 184);
+  --text-highlight: #e0115f;
+}
+
+* {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Maven Pro", sans-serif;
+  background: fixed;
+  background-image: linear-gradient(
+    to right top,
+    #faf9f6,
+    #f9faf6,
+    #f7fcf8,
+    #f5fefb,
+    #f3ffff
+  );
+}
+.header-object {
+  display: flex;
+  position: relative;
+  margin: 0;
+  height: 3rem;
+  padding: 1rem;
+}
+
+.header-object:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  border-bottom: 1.5px solid rgb(184, 184, 184, 0.2);
+}
+
+.header-nav {
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 15%;
+  padding: inherit;
+  text-transform: uppercase;
+}
+.header-nav a {
+  align-items: center;
+  margin-left: 4px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 400;
+}
+.header-nav a:hover {
+  color: var(--text-highlight);
+  text-decoration: underline 2px;
+}
+
+.header-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-profile i {
+  font-size: 32px;
+  color: var(--text-highlight);
+}
+
+.headlines {
+  padding: 0px 5rem 0px 5rem;
+}
+
+.title {
+  border: 5px red solid;
+}
+
+.title h1 {
+  font-size: 78px;
+  font-weight: 600;
+}
+
+.front-headline {
+  display: flex;
+  border: 5px purple solid;
+}
+.front-headline-info {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 5px green solid;
+}
+.front-headline-title {
+  font-size: 42px;
+}
+.article {
+  display: flex;
+  border: #e0115f 5px solid;
+}
+.article-info {
+  border: 5px black solid;
+}
