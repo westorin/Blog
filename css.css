@@ -71,7 +71,7 @@
 }
 
 .title {
-  border: 5px red solid;
+  margin: 3rem 0 2rem 0;
 }
 
 .title h1 {
@@ -81,21 +81,49 @@
 
 .front-headline {
   display: flex;
-  border: 5px purple solid;
 }
 .front-headline-info {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  border: 5px green solid;
 }
 .front-headline-title {
   font-size: 42px;
 }
 .article {
   display: flex;
-  border: #e0115f 5px solid;
+  margin-top: 3rem;
 }
-.article-info {
-  border: 5px black solid;
+#article1 {
+  margin-top: 2rem;
+}
+
+.article-date,
+.article-title,
+.article-description {
+  padding: 0.5rem 0px 0px 0.5rem;
+}
+
+#title-article {
+  font-size: 1px;
+}
+
+#github {
+  color: black;
+  font-size: 2em;
+  transition: ease-in-out 100ms;
+  margin: 0 0 10px 10px;
+}
+#github:hover {
+  transform: scale(1.1);
+}
+
+#eye {
+  color: rgb(184, 184, 184);
+  cursor: pointer;
+  font-size: 1rem;
+  align-items: center;
+}
+#eye:hover {
+  color: #e0115f;
 }
